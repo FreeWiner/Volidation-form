@@ -5,23 +5,27 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='blocks.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='src/css/main.css'>
+    <script src='src/js/main.js'></script>
 </head>
 <body>
     <div class="wrapper">
-        <form class="forms" id="forms">
-            <div class="info" id = "info">
-                <p>Логин: 123; Пароль: qwerty</p>
-            </div>
-            
+        
+        <form class="forms" id="forms" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfbBwVKyOt0dKf4LjAEMEgiB9bJjbqKtoE8Vdjt94qJk9vyHg/formResponse">    
             <div class="reg">
-                <p>Registration</p>
-                <input type="text" placeholder="Create a login" class="input1" id="input1">
-                <input type="text" placeholder="Create a password" class="input2" id="input2">
-                <input id = "header-elem" type="button" class="btn" value="Регистрация" onclick="insertElem()"> 
-            </div>
+                    <p class="inf">Registration</p>
+                    <input type="email" name = "entry.931421033" placeholder="Add your e-mail" class="e-mail" id="e-mail">
+                    <input type="text" name="entry.1608925016" placeholder="Create a login" class="login" id="login">
+                    <div class="password">
+                        <input type="password" name="entry.1785364893" placeholder="Create a password" class="password" id="password-input" name="password">
+                        <a href="#" class="password-control" onclick="show_hide_password(this);"></a>
+                    </div>
+                    <p class="teg">Add your photo</p>
+                    <input type="file" name="dlut" placeholder="Photo" class="photo" id="photo">
+                    <input type="submit" class = "btn" value="Registration">
 
+
+            </div>
         </form> 
     </div>
 </body>
